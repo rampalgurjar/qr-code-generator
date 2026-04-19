@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="..\static\logo_01.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <h1>QR Code Generator</h1>
+    </header>
+    <main>
+        <div class="box">
+            <form action="/" method="post">
+                <div>
+                    <input type="text" id="url" name="url" placeholder="Enter the URL" required>
+                </div>
+                <div>
+                    <button type="submit">Create QR Code</button>
+                </div>    
+            </form>
+        </div>
+
+        {% if qr_image %}
+        <div class="block">
+            <h2>Your QR Code:</h2>
+            <div class="QRcode">
+                <img src="{{ qr_image }}" alt="QR Code">
+            </div>
+            <div class="download_button">
+                <a href="{{ qr_image }}" download="QRCode.png">
+                    <button>Download QR Code</button>
+                </a>
+            </div>
+        </div>
+        {% endif %}
+    </main>
+
+    <footer>
+        <h3>Rampal's Website</h3>
+        <div class="foot">
+            <a href="https://www.instagram.com/rampaljangal/"><i class="fa fa-instagram"></i></a>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-telegram"></i>
+            <i class="fa fa-youtube"></i>
+            <i class="fa fa-pinterest"></i>
+            
+        </div>
+    </footer>
+
+</body>
+</html>

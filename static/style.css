@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    height: 15vh;
+    width: 100%;
+    background-color: rgb(0, 0, 115);
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 2%;
+}
+
+.logo{
+    background-image: url(../static/logo_01.png);
+    height: 10vh;
+    width: 10vh;
+    background-size: cover;
+}
+
+main {
+    min-height: 100vh;
+    width: 100%;
+    padding: 2%;
+    background-color: #f4f4f4;
+}
+
+.box {
+    height: auto;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.box div {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.box input {
+    height: 40px;
+    width: 65%;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.box button {
+    height: 40px;
+    width: 65%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(11, 155, 11);
+    cursor: pointer;
+}
+
+.box button:hover {
+    background-color: rgb(8, 120, 8);
+}
+
+.block {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+
+}
+
+.QRcode {
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.QRcode h2{
+    margin: 2px;
+}
+
+.download_button {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.download_button button {
+    height: 40px;
+    width: 120%;
+    background-color: rgb(11, 155, 11);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download_button button:hover {
+    background-color: rgb(8, 120, 8);
+}
+
+footer{
+    height: 15vh;
+    width: 100%;
+}
+
+footer h3{
+    color: #444;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+    text-align: center;
+    margin-top: 1%;
+    
+}
+
+.foot{
+    margin-left: 35%;
+    height: auto;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    
+}
+
+.foot i{
+    color: rgb(0, 0, 115);
+    font-size: 30px;
+}
+
