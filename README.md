@@ -12,12 +12,6 @@ A simple web application to generate QR codes from user-provided URLs. Built usi
 
 ---
 
-## Project Structure
-
-
-
----
-
 ## Requirements
 
 Make sure you have the following installed:
